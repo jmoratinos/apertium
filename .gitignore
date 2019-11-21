@@ -23,8 +23,8 @@ test-driver
 
 /config.log
 /INSTALL
-/Makefile
-/Makefile.in
+Makefile
+Makefile.in
 
 /aclocal.m4
 /m4/libtool.m4
@@ -36,7 +36,7 @@ test-driver
 /*.pc
 
 # /apertium/wildcard
-/apertium/.libs
+.libs
 
 /apertium/apertium
 /apertium/apertium-*[!1]
@@ -51,6 +51,7 @@ test-driver
 /apertium/apertium_config.h.in
 /apertium/apertium_config.h.in~
 /apertium/apertium_deshtml.cc
+/apertium/apertium_deshtml_alt.cc
 /apertium/apertium_deslatex.cc
 /apertium/apertium_desmediawiki.cc
 /apertium/apertium_desodt.cc
@@ -89,17 +90,21 @@ test-driver
 
 /apertium/adapt-docx
 
-# Tests
-/tests/**/Makefile.in
-/tests/**/Makefile
-/tests/**/.libs
+# Scripts
+/scripts/apertium-filter-dix
+/scripts/apertium-filter-rules
+/scripts/apertium-metalrx-to-lrx
+/scripts/apertium-translate-to-default-equivalent
 
+# Tests
 /tests/tagger/test-find-similar-ambiguity-class
 /tests/data/nno-nob.t3x.bin
 
 /.ccls-cache/
 /tests/deslatex/run.log
 /tests/deslatex/run.trs
+/tests/deshtml-alt/run.log
+/tests/deshtml-alt/run.trs
 /tests/run_tests.py.log
 /tests/run_tests.py.trs
 /tests/sh/run.log
@@ -108,3 +113,10 @@ test-driver
 /tests/data/nno-nob.t1x.bin
 /tests/test-suite.log
 /compile_commands.json
+
+/python/apertium_core.py
+/python/apertium_core_wrap.cpp
+/python/setup.py
+/python/build*
+*.egg-info/
+*.egg
